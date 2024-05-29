@@ -66,7 +66,11 @@ VALUES (1, 'Tony', 'Effe', '2001-12-24', 'RHYNRD88R06H6256','2024-12-17' , '9999
 
 10. Cambiare il numero dell’ufficio del professor Pietro Rizzo in 126
 
-
+UPDATE `teachers`
+SET `office_number` = 126
+WHERE `id` = 58;
 
 
 11. Eliminare dalla tabella studenti il record creato precedentemente al punto 9
+DELETE FROM `students`
+WHERE `id` = 5005;
